@@ -131,7 +131,7 @@ async def generate_cover(thumbnail, title, userid, ctitle):
 
 
     
-@Client.on_message(command(["تشغيل", f"شغل"]) & other_filters)
+@Client.on_message(command(["تشغيل", f"ش"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
     replied = m.reply_to_message
@@ -264,12 +264,12 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**جاري التحميل احسب وياي**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**جاري التحميل وكلخرا احسب وياي**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await suhu.edit("🤼 **لم يتم العثور على نتائج.**")
+                await suhu.edit("🤼 **انت مطي ابحث عدل.**")
             else:
                 songname = search[0]
                 title = search[0]
@@ -293,7 +293,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=image,
-                            caption=f"👍🏻🔥 **أبشر عيني راح اشغلها بعد هاي »** `{pos}`\n\n❤️‍🔥→  **الاسم:** [{songname[:22]}]({url}) | `الاغنية`\n**❤️‍🔥 → المدة:** `{duration}`\n❤️‍🔥 → **طلب من الحب مالي:** {requester}",
+                            caption=f"👍🏻🔥 **نجب مطي ورا هاي اشغلها وردا »** `{pos}`\n\n❤️‍🔥→  **الاسم:** [{songname[:22]}]({url}) | `الاغنية`\n**❤️‍🔥 → المدة:** `{duration}`\n❤️‍🔥 → **طلب من الحب مالي:** {requester}",
                             reply_markup=keyboard,
                         )
                     else:
