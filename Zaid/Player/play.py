@@ -143,7 +143,7 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton("⏭️", "skip"),
                       InlineKeyboardButton("🔼", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton(text="🥇 المطور ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                      InlineKeyboardButton(text="🥇 المطور تاج راسك ", url=f"https://t.me/{UPDATES_CHANNEL}"),
                   ],[
                       InlineKeyboardButton("مسح.", callback_data="cls")],
                   ]
@@ -264,7 +264,7 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**جاري التحميل وكلخرا احسب وياي**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**انتظر وردا لادكك بنعال**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
